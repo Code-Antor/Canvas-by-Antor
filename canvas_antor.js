@@ -1,7 +1,6 @@
-//write it into a function named 
-//canvas();
+//write it into a function-❗❗ set name 
 
-function canvass(){
+function setName(){
     const canvas = document.querySelector("canvas");
     const context = canvas.getContext("2d");
   
@@ -48,7 +47,8 @@ function canvass(){
     };
   
     preloadImages();
-  
+
+    //edit trigger.🔰
     gsap.to(imageSeq, {
       frame: frameCount - 1,
       snap: "frame",
@@ -88,7 +88,8 @@ function canvass(){
         img.height * ratio
       );
     }
-  
+
+    //edit trigger🔰
     ScrollTrigger.create({
       trigger: ".page1",
       pin: true,
@@ -98,4 +99,4 @@ function canvass(){
     });
   
   }
-  canvass();
+  setName();
